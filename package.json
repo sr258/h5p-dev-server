@@ -1,0 +1,14 @@
+{
+  "name": "h5p-dev-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Rettig",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "h5p-nodejs-library": "^0.11.1"
+  }
+}
