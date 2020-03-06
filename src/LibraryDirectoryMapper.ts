@@ -19,24 +19,24 @@ export class LibraryDirectoryMapper {
      * @param library the library to look for
      * @returns the absolute path to the library directory or undefined if it wasn't found
      */
-    public async getDirectory(library: ILibraryName): Promise<string> {
+    public getDirectory(library: ILibraryName): string {
         const uberName = LibraryName.toUberName(library);
         const cachedDirectory = this.map[uberName];
         if (
-            await fsExtra.pathExists(path.join(cachedDirectory, 'library.json'))
+            fsExtra.pathExistsSync(path.join(cachedDirectory, 'library.json'))
         ) {
             return cachedDirectory;
         }
 
         this.map[uberName] = undefined;
-        const dirs = await fsExtra.readdir(this.baseDir);
+        const dirs = fsExtra.readdirSync(this.baseDir);
         for (const dir of dirs) {
             const libraryPath = path.join(this.baseDir, dir);
             const libraryJsonPath = path.join(libraryPath, 'library.json');
-            if (!(await fsExtra.pathExists(libraryJsonPath))) {
+            if (!(fsExtra.pathExistsSync(libraryJsonPath))) {
                 continue;
             }
-            const libraryMetadata: ILibraryName = await fsExtra.readJSON(
+            const libraryMetadata: ILibraryName = fsExtra.readJSONSync(
                 libraryJsonPath
             );
             if (LibraryName.equal(libraryMetadata, library)) {

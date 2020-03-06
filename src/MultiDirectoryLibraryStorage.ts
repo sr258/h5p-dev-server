@@ -1,14 +1,12 @@
 import { Stream } from 'stream';
 import { ReadStream } from 'fs';
 import {
-    fsImplementations,
     ILibraryStorage,
     ILibraryName,
     ILibraryMetadata,
     IInstalledLibrary,
     LibraryName
 } from 'h5p-nodejs-library';
-import { DevLibraryStorage } from './DevLibraryStorage';
 
 /**
  * Aggregates several libraries directories. All write access is sent to the directory
@@ -19,20 +17,17 @@ import { DevLibraryStorage } from './DevLibraryStorage';
  */
 export class MultiDirectoryLibraryStorage implements ILibraryStorage {
     /**
-     * @param writeDirectory an absolute path to the write directory
-     * @param readDirectories absolute paths to the read directories
+     * @param writeStorage an absolute path to the write directory
+     * @param readStorages absolute paths to the read directories
      */
-    constructor(writeDirectory: string, ...readDirectories: string[]) {
-        this.writeStorage = new fsImplementations.FileLibraryStorage(
-            writeDirectory
-        );
-        this.readStorages = readDirectories.map(
-            readDirectory => new DevLibraryStorage(readDirectory)
-        );
+    constructor(
+        private writeStorage: ILibraryStorage,
+        ...readStorages: ILibraryStorage[]
+    ) {
+        this.readStorages = readStorages;
     }
 
     private readStorages: ILibraryStorage[];
-    private writeStorage: ILibraryStorage;
 
     public addLibraryFile(
         library: ILibraryName,
@@ -47,7 +42,7 @@ export class MultiDirectoryLibraryStorage implements ILibraryStorage {
     }
 
     public clearLibraryFiles(library: ILibraryName): Promise<void> {
-        return this.clearLibraryFiles(library);
+        return this.writeStorage.clearLibraryFiles(library);
     }
 
     public async fileExists(
@@ -64,7 +59,10 @@ export class MultiDirectoryLibraryStorage implements ILibraryStorage {
         library: ILibraryName,
         file: string
     ): Promise<ReadStream> {
-        return (await this.findReadStorage(library)).getFileStream(library, file);
+        return (await this.findReadStorage(library)).getFileStream(
+            library,
+            file
+        );
     }
 
     public async getInstalled(
