@@ -1,0 +1,37 @@
+{
+  "_from": "@h5p-hub-mirror/h5peditor-tablelist@1.0.x",
+  "_id": "@h5p-hub-mirror/h5peditor-tablelist@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-0/apPz4Blhb5K2h5Kt1ZynAa43CilFAy+RBw0qy8gDM9Ovd5r+oS9aTrBCa+QrI4lI1tEpkb4GiCLNDo0nNPlA==",
+  "_location": "/@h5p-hub-mirror/h5peditor-tablelist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/h5peditor-tablelist@1.0.x",
+    "name": "@h5p-hub-mirror/h5peditor-tablelist",
+    "escapedName": "@h5p-hub-mirror%2fh5peditor-tablelist",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "1.0.x",
+    "saveSpec": null,
+    "fetchSpec": "1.0.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/h5peditor-rangelist"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/h5peditor-tablelist/-/h5peditor-tablelist-1.0.4.tgz",
+  "_shasum": "fc6811e1f59e7dc5cd9a0a764ae3c594dbb2de42",
+  "_spec": "@h5p-hub-mirror/h5peditor-tablelist@1.0.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/h5peditor-rangelist",
+  "author": {
+    "name": "Joubel",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library H5PEditor.TableList from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/h5peditor-tablelist",
+  "version": "1.0.4"
+}

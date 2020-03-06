@@ -1,0 +1,39 @@
+{
+  "_from": "@h5p-hub-mirror/h5peditor-rangelist@1.0.x",
+  "_id": "@h5p-hub-mirror/h5peditor-rangelist@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-ItMKxcj1mGjVy6EWz3dRGI10hTKKamXAGJoy3N6uAI59qSGxPFhVoMImJHwow8TsOp9s8rnwF6gOeL7jsEnr+w==",
+  "_location": "/@h5p-hub-mirror/h5peditor-rangelist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/h5peditor-rangelist@1.0.x",
+    "name": "@h5p-hub-mirror/h5peditor-rangelist",
+    "escapedName": "@h5p-hub-mirror%2fh5peditor-rangelist",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "1.0.x",
+    "saveSpec": null,
+    "fetchSpec": "1.0.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/h5p-blanks"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/h5peditor-rangelist/-/h5peditor-rangelist-1.0.8.tgz",
+  "_shasum": "6bb69047b70ba5f339b24a877ed9c68f462bc4da",
+  "_spec": "@h5p-hub-mirror/h5peditor-rangelist@1.0.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/h5p-blanks",
+  "author": {
+    "name": "Joubel",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@h5p-hub-mirror/h5peditor-tablelist": "1.0.x"
+  },
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library H5PEditor.RangeList from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/h5peditor-rangelist",
+  "version": "1.0.8"
+}

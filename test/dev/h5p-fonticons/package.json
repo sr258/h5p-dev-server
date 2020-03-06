@@ -1,0 +1,37 @@
+{
+  "_from": "@h5p-hub-mirror/h5p-fonticons@1.0.x",
+  "_id": "@h5p-hub-mirror/h5p-fonticons@1.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-j9FC2Tcx6U8/AvMdZy0htfQJI8kicOBsUiz1GIzWObAbEq8spFnZfV9sz+h09fNEf6cCO9zI0achtd32LsOPXA==",
+  "_location": "/@h5p-hub-mirror/h5p-fonticons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/h5p-fonticons@1.0.x",
+    "name": "@h5p-hub-mirror/h5p-fonticons",
+    "escapedName": "@h5p-hub-mirror%2fh5p-fonticons",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "1.0.x",
+    "saveSpec": null,
+    "fetchSpec": "1.0.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/h5p-joubelui"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/h5p-fonticons/-/h5p-fonticons-1.0.6.tgz",
+  "_shasum": "ef9087cdd02dce35926b6ae0c654a33394fad316",
+  "_spec": "@h5p-hub-mirror/h5p-fonticons@1.0.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/h5p-joubelui",
+  "author": {
+    "name": "Joubel",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library H5P.FontIcons from the H5P Hub",
+  "license": "see license in GitHub Repository",
+  "name": "@h5p-hub-mirror/h5p-fonticons",
+  "version": "1.0.6"
+}

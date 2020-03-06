@@ -1,0 +1,37 @@
+{
+  "_from": "@h5p-hub-mirror/tether@1.0.x",
+  "_id": "@h5p-hub-mirror/tether@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-pKd12EA+C2ZQEGrodft+1gNTtH3CVWMNtuUPMpv9l+ub2xYlAY6wxXrMHhEy3HCwjKemrnmLeSf8hLrMduE2XQ==",
+  "_location": "/@h5p-hub-mirror/tether",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/tether@1.0.x",
+    "name": "@h5p-hub-mirror/tether",
+    "escapedName": "@h5p-hub-mirror%2ftether",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "1.0.x",
+    "saveSpec": null,
+    "fetchSpec": "1.0.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/drop"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/tether/-/tether-1.0.2.tgz",
+  "_shasum": "0d1632e55ab7293d6f4b27796b789e88f04b4de3",
+  "_spec": "@h5p-hub-mirror/tether@1.0.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/drop",
+  "author": {
+    "name": "Hubspot. Wrapped as H5P by Joubel",
+    "url": "fnoks"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library Tether from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/tether",
+  "version": "1.0.2"
+}

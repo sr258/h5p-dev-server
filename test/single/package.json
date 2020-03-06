@@ -1,0 +1,44 @@
+{
+  "_from": "@h5p-hub-mirror/h5p-blanks",
+  "_id": "@h5p-hub-mirror/h5p-blanks@1.12.3",
+  "_inBundle": false,
+  "_integrity": "sha512-DlzrAPkDGjn760gWcyZKhKu27N/78YNk1VDKrUDoiGkOujE/UoI1yi73GOMWsZQH0wvoSe3kxlHrAIp3qfa/Ng==",
+  "_location": "/@h5p-hub-mirror/h5p-blanks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/h5p-blanks",
+    "name": "@h5p-hub-mirror/h5p-blanks",
+    "escapedName": "@h5p-hub-mirror%2fh5p-blanks",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/h5p-blanks/-/h5p-blanks-1.12.3.tgz",
+  "_shasum": "6b2765949f37a85713bb7a77f850f6e7368fbfe9",
+  "_spec": "@h5p-hub-mirror/h5p-blanks",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server",
+  "author": {
+    "name": "Joubel",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@h5p-hub-mirror/fontawesome": "4.5.x",
+    "@h5p-hub-mirror/h5p-joubelui": "1.3.x",
+    "@h5p-hub-mirror/h5p-question": "1.4.x",
+    "@h5p-hub-mirror/h5p-textutilities": "1.3.x",
+    "@h5p-hub-mirror/h5peditor-rangelist": "1.0.x",
+    "@h5p-hub-mirror/h5peditor-showwhen": "1.0.x"
+  },
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library H5P.Blanks from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/h5p-blanks",
+  "version": "1.12.3"
+}

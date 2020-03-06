@@ -1,0 +1,37 @@
+{
+  "_from": "@h5p-hub-mirror/h5p-transition@1.0.x",
+  "_id": "@h5p-hub-mirror/h5p-transition@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-DoJp5Tyn/CoNISq5ZQ3FTGD0iteDlQUU9DXAF24/osYWh/Fh7H6ZkdCHbtfopLy4UGcvsagKQvcBKhopDlQFGg==",
+  "_location": "/@h5p-hub-mirror/h5p-transition",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/h5p-transition@1.0.x",
+    "name": "@h5p-hub-mirror/h5p-transition",
+    "escapedName": "@h5p-hub-mirror%2fh5p-transition",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "1.0.x",
+    "saveSpec": null,
+    "fetchSpec": "1.0.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/h5p-joubelui"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/h5p-transition/-/h5p-transition-1.0.4.tgz",
+  "_shasum": "f832ced91f7a21ea787a60297d35ba10f7cb3b5f",
+  "_spec": "@h5p-hub-mirror/h5p-transition@1.0.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/h5p-joubelui",
+  "author": {
+    "name": "Joubel",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library H5P.Transition from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/h5p-transition",
+  "version": "1.0.4"
+}

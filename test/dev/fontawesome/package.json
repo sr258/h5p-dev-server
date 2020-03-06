@@ -1,0 +1,39 @@
+{
+  "_from": "@h5p-hub-mirror/fontawesome@4.5.x",
+  "_id": "@h5p-hub-mirror/fontawesome@4.5.4",
+  "_inBundle": false,
+  "_integrity": "sha512-nznw/6K7irja/0Bf5AH5E+6LDZSxBZdjJWlIcfkiqFuMx7ww2TwO0XM6OttXpYAynf2UDSr1XfaBHwr8vOl3CQ==",
+  "_location": "/@h5p-hub-mirror/fontawesome",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/fontawesome@4.5.x",
+    "name": "@h5p-hub-mirror/fontawesome",
+    "escapedName": "@h5p-hub-mirror%2ffontawesome",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "4.5.x",
+    "saveSpec": null,
+    "fetchSpec": "4.5.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/h5p-blanks",
+    "/@h5p-hub-mirror/h5p-joubelui",
+    "/@h5p-hub-mirror/h5p-question"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/fontawesome/-/fontawesome-4.5.4.tgz",
+  "_shasum": "a0f8fcd034eb2217ca9aecaf42eb4613478ee772",
+  "_spec": "@h5p-hub-mirror/fontawesome@4.5.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/h5p-blanks",
+  "author": {
+    "name": "Dave Gandy",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library FontAwesome from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/fontawesome",
+  "version": "4.5.4"
+}

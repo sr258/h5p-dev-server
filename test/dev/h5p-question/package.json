@@ -1,0 +1,40 @@
+{
+  "_from": "@h5p-hub-mirror/h5p-question@1.4.x",
+  "_id": "@h5p-hub-mirror/h5p-question@1.4.6",
+  "_inBundle": false,
+  "_integrity": "sha512-FfYKz7ABxL0CeI1kaor0LIVV/47hboCbAVJu1rw4U8hBmZqkmQj9Xm2J63ALrn482FPGPd2B1kBKWC87CBZa/Q==",
+  "_location": "/@h5p-hub-mirror/h5p-question",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@h5p-hub-mirror/h5p-question@1.4.x",
+    "name": "@h5p-hub-mirror/h5p-question",
+    "escapedName": "@h5p-hub-mirror%2fh5p-question",
+    "scope": "@h5p-hub-mirror",
+    "rawSpec": "1.4.x",
+    "saveSpec": null,
+    "fetchSpec": "1.4.x"
+  },
+  "_requiredBy": [
+    "/@h5p-hub-mirror/h5p-blanks"
+  ],
+  "_resolved": "https://registry.npmjs.org/@h5p-hub-mirror/h5p-question/-/h5p-question-1.4.6.tgz",
+  "_shasum": "2865ac9514b42e5d8ee80a48a4e1bd357e4e6853",
+  "_spec": "@h5p-hub-mirror/h5p-question@1.4.x",
+  "_where": "/home/sebastian/Documents/h5p_dev/h5p-dev-server/node_modules/@h5p-hub-mirror/h5p-blanks",
+  "author": {
+    "name": "Joubel",
+    "url": "uploaded by h5p-hub-mirror"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@h5p-hub-mirror/fontawesome": "4.5.x",
+    "@h5p-hub-mirror/h5p-joubelui": "1.3.x"
+  },
+  "deprecated": false,
+  "description": "An unofficial mirrored version of the distribution files of the H5P library H5P.Question from the H5P Hub",
+  "license": "MIT",
+  "name": "@h5p-hub-mirror/h5p-question",
+  "version": "1.4.6"
+}
