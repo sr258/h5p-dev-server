@@ -64,7 +64,7 @@ export class MultiDirectoryLibraryStorage implements ILibraryStorage {
         library: ILibraryName,
         file: string
     ): Promise<ReadStream> {
-        return (await this.findReadStorage(library)).fileExists(library, file);
+        return (await this.findReadStorage(library)).getFileStream(library, file);
     }
 
     public async getInstalled(
