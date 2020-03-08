@@ -7,6 +7,7 @@ import {
     IInstalledLibrary,
     LibraryName
 } from 'h5p-nodejs-library';
+import debug from 'debug';
 
 /**
  * Aggregates several libraries directories. All write access is sent to the directory
@@ -101,6 +102,9 @@ export class MultiDirectoryLibraryStorage implements ILibraryStorage {
         try {
             await this.findReadStorage(name);
         } catch (error) {
+            debug('h5p-dev-server:MultiDirectoryLibraryStorage')(
+                `Library ${LibraryName.toUberName(name)} not found: ${error}`
+            );
             return false;
         }
         return true;
@@ -130,12 +134,21 @@ export class MultiDirectoryLibraryStorage implements ILibraryStorage {
     ): Promise<ILibraryStorage> {
         let foundStorage: ILibraryStorage;
         for (const storage of this.readStorages) {
-            if (await storage.libraryExists(library)) {
-                foundStorage = storage;
-                break;
+            try {
+                if (await storage.libraryExists(library)) {
+                    foundStorage = storage;
+                    break;
+                }
+            } catch (ignored) {
+                continue;
             }
         }
         if (!foundStorage) {
+            debug('h5p-dev-server:MultiDirectoryLibraryStorage')(
+                `Library ${LibraryName.toUberName(
+                    library
+                )} was not found in any storage!`
+            );
             throw new Error(
                 `Library ${LibraryName.toUberName(
                     library
