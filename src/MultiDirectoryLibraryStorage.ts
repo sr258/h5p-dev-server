@@ -128,14 +128,20 @@ export class MultiDirectoryLibraryStorage implements ILibraryStorage {
     private async findReadStorage(
         library: ILibraryName
     ): Promise<ILibraryStorage> {
-        const storage = this.readStorages.find(st => st.libraryExists(library));
-        if (!storage) {
+        let foundStorage: ILibraryStorage;
+        for (const storage of this.readStorages) {
+            if (await storage.libraryExists(library)) {
+                foundStorage = storage;
+                break;
+            }
+        }
+        if (!foundStorage) {
             throw new Error(
                 `Library ${LibraryName.toUberName(
                     library
                 )} not found in read storage`
             );
         }
-        return storage;
+        return foundStorage;
     }
 }

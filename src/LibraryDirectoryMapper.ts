@@ -15,7 +15,7 @@ export class LibraryDirectoryMapper {
     private map: { [key: string]: string } = {};
 
     /**
-     * Scans the base directory for the library and returns a path. 
+     * Scans the base directory for the library and returns a path.
      * @param library the library to look for
      * @returns the absolute path to the library directory or undefined if it wasn't found
      */
@@ -23,6 +23,7 @@ export class LibraryDirectoryMapper {
         const uberName = LibraryName.toUberName(library);
         const cachedDirectory = this.map[uberName];
         if (
+            cachedDirectory &&
             fsExtra.pathExistsSync(path.join(cachedDirectory, 'library.json'))
         ) {
             return cachedDirectory;
@@ -33,7 +34,7 @@ export class LibraryDirectoryMapper {
         for (const dir of dirs) {
             const libraryPath = path.join(this.baseDir, dir);
             const libraryJsonPath = path.join(libraryPath, 'library.json');
-            if (!(fsExtra.pathExistsSync(libraryJsonPath))) {
+            if (!fsExtra.pathExistsSync(libraryJsonPath)) {
                 continue;
             }
             const libraryMetadata: ILibraryName = fsExtra.readJSONSync(

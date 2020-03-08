@@ -19,6 +19,7 @@ export class SingleDirectoryStorage extends fsImplementations.FileLibraryStorage
                 `Directory ${singleDirectory} must contain a library.json file`
             );
         }
+        this.ignoredFilePatterns = [new RegExp('package.json')];
     }
 
     public async libraryExists(library: ILibraryName): Promise<boolean> {
