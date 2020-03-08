@@ -4,6 +4,23 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        ,
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/example/express.ts",
+            "runtimeArgs": ["-r", "ts-node/register"],
+            "outFiles": ["${workspaceFolder}/build/**/*.js"],
+            "env": {
+                "PORT": "8084",
+                "DEBUG": "h5p*",
+                "LOG_LEVEL": "debug"
+            },
+            "outputCapture": "std",
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"]
+        },
         {
             "type": "node",
             "name": "vscode-jest-tests",

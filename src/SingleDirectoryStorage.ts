@@ -22,6 +22,21 @@ export class SingleDirectoryStorage extends fsImplementations.FileLibraryStorage
         this.ignoredFilePatterns = [new RegExp('package.json')];
     }
 
+    public async getInstalled(
+        ...machineNames: string[]
+    ): Promise<ILibraryName[]> {
+        const libraryMetadata: ILibraryName = await fsExtra.readJSON(
+            path.join(this.singleDirectory, 'library.json')
+        );
+        if (machineNames && machineNames.length > 0) {
+            if (machineNames.some(mn => mn === libraryMetadata.machineName)) {
+                return [libraryMetadata];
+            }
+            return [];
+        }
+        return [libraryMetadata];
+    }
+
     public async libraryExists(library: ILibraryName): Promise<boolean> {
         const d = this.getDirectoryPath(library);
         return d !== undefined;

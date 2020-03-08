@@ -5,7 +5,8 @@
     "scripts": {
         "test": "npx jest",
         "start": "ts-node src/example/express.ts",
-        "prepare": "sh scripts/install.sh"
+        "prepare": "sh scripts/install.sh",
+        "build": "npx tsc"
     },
     "author": "Sebastian Rettig",
     "license": "GPL-3.0-or-later",
